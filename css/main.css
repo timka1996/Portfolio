@@ -1,0 +1,1603 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); /*bold*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@500&display=swap'); /*medium*/ 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@700&family=Roboto:wght@500&display=swap'); /*regular*/
+
+
+/*loader*/
+
+.loading{
+    margin: 0 auto;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+.main{
+    margin: 15rem auto;
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    border: 5px solid black;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+.dot2{
+    border: 5px solid yellow;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    margin: -5px -5px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    animation: loader 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut{
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+/*SCROLL_BAR*/
+
+::-webkit-scrollbar{
+    width: 3px!important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white!important;
+    border-radius: 50px!important;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    background-color: transparent!important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+#nav .fixed{
+    background-color: #000000f5!important;
+    padding: 0;
+}
+
+.navbar-brand{
+    font-size: 1.7rem;
+    color: yellow!important;
+    padding-left: 6rem;
+}
+
+.navbar-nav{
+    margin: 0 0 0 45rem;
+  
+}
+
+.navbar-nav > li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px;
+    
+}
+
+.nav-link{
+    color: white!important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    color: yellow!important;
+}
+
+.home{
+    background: url('../img/fon.jpg') no-repeat;
+    background-size: cover;
+    height: 42rem;
+}
+
+.home .col-md-6{
+    margin: 30% auto;
+}
+
+.titles p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.titles h3{
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.button{
+    width: 100%;
+    margin: 3rem 10rem auto;
+}
+
+.button > a{
+    background-color: yellow;
+    color: black;
+    padding: 1.5rem 4rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Services section*/
+
+.services{
+    padding: 5rem 0 5rem;
+}
+
+.services > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.services > .container > .row > .col-md-4 > .card{
+    border: none;
+    border-radius: 0;
+}
+.services > .container > .row > .col-md-4 > .card > .card-header{
+    text-align: center;
+    border-bottom: none;
+    background-color: transparent;
+}
+.card > .card-header > i{
+    font-size: 3rem;
+    background-color: yellow;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+.card > .card-body{
+    text-align: center;
+}
+
+/*Portfolio section*/
+
+.portfolio{
+    padding: 5rem 0 5rem;
+}
+.col-md-4 > .card > .card-header > img{
+    width: 100%;
+}
+.card{
+    border: none;
+    border-radius: 0;
+}
+.card > .card-header{
+    padding: 0;
+    background-color: transparent;
+}
+.card-header > .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #ffff00cf;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay > h4{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.overlay > p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mine{
+    height: 320px;
+}
+
+/* Portfolio section*/
+
+.about{
+    padding: 5rem 0 5rem;
+}
+.about > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.about > .container > .row > .col-md-4{
+    margin: 4rem 5rem;
+}
+.about > .container > .row > .col-md-4:nth-child(2){
+    margin: 6rem 0;
+}
+.info > h4{
+    font-size: 2.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.info > p{
+    letter-spacing: 0.5px;
+    margin: 3rem 0 1rem;
+    font-size: 1.7rem;
+}
+.info > ul{
+    margin-left: -2rem;
+    display: inline;
+    justify-content: center;
+}
+.info > ul > li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+ul > li > .firstSpan{
+    font-weight: bold;
+}
+ul > li > .secondSpan{
+    color: #808080;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: black;
+    padding: 2rem;
+}
+.copyright > p{
+    color: white;
+}
+.social-networks > a{
+    text-decoration: none;
+    margin: 5px;
+}
+.social-networks > a > i{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background-color: yellow;
+    color: black;
+    transition: 0.3s ease;
+}
+.social-networks > a > i:hover{
+    background-color: black;
+    color: yellow;
+}
+.smallInfo{
+    color: white;
+}
+
+
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1200px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 0 0 30rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 10% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .titles > p{
+        font-size: -4rem;
+        margin-top: -6rem;
+    }
+    .button{
+        margin: 1.5rem 10rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .services > .container > p{
+        font-size: 1.2rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-top:40px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .overlay > p{
+        margin-top: 0;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 7rem 0 0rem;
+     
+        width: 50%;
+    }
+    .about > .container > .row > .col-md-4 img{
+        width: 30rem;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 3rem;
+    }
+    .info > h4{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    .secondSpan{
+        font-size: 1.1rem;
+    }
+
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer > .container > .row > .col-md-4{
+        
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+    .social-networks{
+        margin-left: 0.5rem;
+    }
+    .networks{
+        margin-left: 1.2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 0 0 30rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 10% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .titles > p{
+        font-size: -4rem;
+        margin-top: -6rem;
+    }
+    .button{
+        margin: 1.5rem 10rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-top:40px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .overlay > p{
+        margin-top: 0;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 7rem 0 0rem;
+       
+        width: 50%;
+    }
+    .about > .container > .row > .col-md-4 img{
+        width: 30rem;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 3rem;
+    }
+    .info > h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .secondSpan{
+        font-size: 1rem;
+    }
+
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer > .container > .row > .col-md-4{
+        
+        margin-top: 1.5rem;
+        font-size: 15px;
+    }
+    .social-networks{
+        margin-left: 0.5rem;
+    }
+    .networks{
+        margin-left: 1.2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 976px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar-nav{
+        margin: 0 0 0 13rem;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 0 0 15rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .button{
+        margin: 5.5rem 6rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-top:40px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .overlay > p{
+        margin-top: 0;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 7rem 0 0rem;
+    
+        width: 50%;
+    }
+    .about > .container > .row > .col-md-4 img{
+        width: 30rem;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 3rem;
+    }
+    .info > h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .secondSpan{
+        font-size: 1rem;
+    }
+
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer > .container > .row > .col-md-4{
+        
+        margin-top: 1.5rem;
+        font-size: 15px;
+    }
+    .social-networks{
+        margin-left: 0.5rem;
+    }
+    .networks{
+        margin-left: 1.2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    .button{
+        margin: 5.5rem 13rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 1.6rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 8rem 0;
+        
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 8rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 1.1;
+        margin-top: 2rem;
+    }
+    .secondSpan{
+        font-size: 1.1rem;
+    }
+
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 3rem;
+        margin-top: 1.5rem;
+        font-size: 23px;
+    }
+    .social-networks{
+        margin-left: 7.5rem;
+    }
+    .networks{
+        margin-left: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 501px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .button{
+        margin: 5.5rem 8rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 1.3rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 1rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 22px;
+        margin-top: 1.8rem;
+    }
+    .secondSpan{
+        font-size: 1.5rem;
+    }
+
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem;
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+    .social-networks{
+        margin-left: 1rem;
+    }
+    .networks{
+        margin-left: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+        margin-top: 4rem;
+    }
+    .button{
+        margin: 5.5rem 8rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 1.3rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 1rem 0;
+        width: 100%;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 22px;
+        margin-top: 1.8rem;
+    }
+    .secondSpan{
+        font-size: 1.5rem;
+    }
+
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem;
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+    .networks{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.9rem;
+        margin-top: 1rem;
+         margin-bottom: 0rem;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+        margin-top: 0rem;
+    }
+    
+
+    .button{
+        margin: 8rem 7rem auto;
+    }
+    .button > a{
+        padding: 1.4rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 1.3rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .card p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    .portfolio > .container > p{
+        font-size: 1.3rem;
+        font-style: italic;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 2rem;
+    }
+    .about > .container > p{
+        font-size: 1.5rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 1rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 18px;
+    }
+
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem;
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+    .networks{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 370px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    .titles > p{
+        font-size: 1.1rem;
+        margin-top: 3rem;
+    }
+    .button{
+        margin: 4.5rem 6.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 1.2rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card p{
+        font-size: 18px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 1.3rem;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 1.3rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 1rem 0;
+        width: 100%;
+    }
+    .about > .container > .row > .col-md-4 img{
+        width: 100%;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .info > ul > li{
+        font-size: 20px;
+    }
+    .secondSpan{
+        font-size: 17px;
+    }
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem;
+        margin-top: 1.5rem;
+        font-size: 17px;
+    }
+    .networks{
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 315px) and (max-width: 330px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar > button{
+        border: none;
+    }
+    .navbar > button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: black!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px;
+    }
+
+    /*Home*/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > h3{
+        font-size: 1.6rem;
+    }
+    .titles > p{
+        font-size: 1.1rem;
+    }
+    .button{
+        margin: 3rem 5.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /*Services*/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .portfolio > .container > .row > .col-md-4{
+        margin-bottom: 5px;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+    /*About*/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 1rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 2rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+    .firstSpan{
+        font-size: 1.2rem;
+    }
+    .secondSpan{
+        font-size: 1.1rem;
+    }
+
+
+    /*Footer*/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem;
+    }
+
+}
+
+
