@@ -47,13 +47,37 @@
                     <p>Welcome to my website</p>
                     <h3>Valiev Temurbek</h3>
                     <div class="button">
-                        <a href="#">Hire me!</a>
+                        <a id="modalViewer" onclick="viewModal()" href="#">Hire me!</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="modalView">
+    <div class="table table-dark table-hover table-striped">
+        <table class="tbody">
+            <tr>
+                <th>E-mail:</th>
+                <td>valievtemurbek@gmail.com</td>
+            </tr>
+            <tr>
+                <th>GitHub:</th>
+                <td>https://github.com/timka1996</td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td>+998 91 698 11 61</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="hideModal()" class="btn btn-warning">OK</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
 <section id="services" class="services">
     <div class="container">
         <h3 class="text-center">Services</h3>
