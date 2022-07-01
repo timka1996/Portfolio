@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Portfolio</title>
-</head>
- 
-<body>
- 
-<div class="loading">
-    <div class="main">
+  </head>
+
+  <body>
+    <div class="loading">
+      <div class="main">
         <div class="dot">
-            <div class="dot2"></div>
+          <div class="dot2"></div>
         </div>
+      </div>
     </div>
-</div>
 
+    <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">MAIN</a>
 
+      <button
+        onclick="navBack()"
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
 
-            <a class="navbar-brand" href="#">MAIN</a>
-
-            <button onclick="navBack()" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            </ul>
-          </div>
-</nav>
-
-<section class="home">
-    <div class="container">
+    <section class="home">
+      <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="titles">
-                    <p>Welcome to my website</p>
-                    <h3>Valiev Temurbek</h3>
-                    <div class="button">
-                        <a id="modalViewer" onclick="viewModal()" href="#">Hire me!</a>
-                    </div>
-                </div>
+          <div class="col-md-6">
+            <div class="titles">
+              <p>Welcome to my website</p>
+              <h3>Valiev Temurbek</h3>
+              <div class="button">
+                <a id="modalViewer" onclick="viewModal()" href="#">Hire me!</a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<div class="modalView">
-    <div class="table table-dark table-hover table-striped">
+    <div class="modalView">
+      <div class="table table-dark table-hover table-striped">
         <table class="tbody">
-            <tr>
-                <th>E-mail:</th>
-                <td>valievtemurbek@gmail.com</td>
-            </tr>
-            <tr>
-                <th>GitHub:</th>
-                <td>https://github.com/timka1996</td>
-            </tr>
-            <tr>
-                <th>Phone:</th>
-                <td>+998 (91) 698 11 61</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button onclick="hideModal()" class="btn btn-warning">OK</button></td>
-            </tr>
+          <tr>
+            <th>E-mail:</th>
+            <td>valievtemurbek@gmail.com</td>
+          </tr>
+          <tr>
+            <th>GitHub:</th>
+            <td>https://github.com/timka1996</td>
+          </tr>
+          <tr>
+            <th>Phone:</th>
+            <td>+998 (91) 698 11 61</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button onclick="hideModal()" class="btn btn-warning">OK</button>
+            </td>
+          </tr>
         </table>
+      </div>
     </div>
-</div>
 
-<section id="services" class="services">
-    <div class="container">
+    <section id="services" class="services">
+      <div class="container">
         <h3 class="text-center">Services</h3>
         <p class="text-center"><i>I'm web-frontend developer</i></p>
         <div class="row mt-5">
-
-            <div class="col-md-4" data-aos="fade-right">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>My conditions</h3>
-                        <p>I am a frontend developer from Uzbekistan and work on a remote format.
-                        </p>
-                    </div>
-                </div>
+          <div class="col-md-4" data-aos="fade-right">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="card-body">
+                <h3>My conditions</h3>
+                <p>
+                  I am a frontend developer from Uzbekistan and work on a remote
+                  format.
+                </p>
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>My technologies</h3>
-                        <p>I use such technologies as: HTML, CSS, SASS, Bootstrap, JavaScript, React, Redux.
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div class="card-body">
+                <h3>My technologies</h3>
+                <p>
+                  I use such technologies as: HTML, CSS, SASS, Bootstrap,
+                  JavaScript, React, Redux.
+                </p>
+              </div>
             </div>
-           <!--  <div class="col-md-4">
+          </div>
+          <!--  <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
                         <i class="fas fa-lock"></i>
@@ -122,181 +135,242 @@
                 </div>
             </div> -->
         </div>
-    </div>
-</section>
-<section id="portfolio" class="portfolio">
-    <div class="container">
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <div class="container">
         <h3 class="text-center">Portfolio</h3>
-        <p class="text-center"><i>works done by me (click on the blue word)</i></p>
+        <p class="text-center">
+          <i>works done by me (click on the blue word)</i>
+        </p>
         <h4 class="text-center">HTML CSS JavaScript(DOM)</h4>
         <div id="img_container" class="row mt-5">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href="https://timka1996.github.io/Maket_Pizza/">Maket Pizza</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/pizza.jpg" alt="Portfolio img">
-                    </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://timka1996.github.io/Maket_Pizza/"
+                      >Maket Pizza</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/pizza.jpg" alt="Portfolio img" />
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href=" https://timka1996.github.io/Macintosh/">Macintosh</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/Macintosh.png" alt="Portfolio img">
-                    </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href=" https://timka1996.github.io/Macintosh/"
+                      >Macintosh</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/Macintosh.png" alt="Portfolio img" />
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href="https://timka1996.github.io/first_figma_project/">Figma</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/first_figma_project.png" alt="Portfolio img">
-                    </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://timka1996.github.io/first_figma_project/"
+                      >Figma</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/first_figma_project.png" alt="Portfolio img" />
+              </div>
             </div>
+          </div>
         </div>
         <h4 class="text-center my-4">Vanilla JavaScript</h4>
         <div id="img_container" class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href="https://timka1996.github.io/Timer/">Timer</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/Newyear.jpg" alt="Portfolio img">
-                    </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a target="_blank" href="https://timka1996.github.io/Timer/"
+                      >Timer</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/Newyear.jpg" alt="Portfolio img" />
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href="https://timka1996.github.io/myMusics/">My Musics</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/knaan.jpg" alt="Portfolio img">
-                    </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://timka1996.github.io/myMusics/"
+                      >My Musics</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/knaan.jpg" alt="Portfolio img" />
+              </div>
             </div>
-           <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4><a target="_blank" href="https://timka1996.github.io/Clone-Pexels.com-API-/">Clone pexels.com (API)</a></h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="img/pexels.png" alt="Portfolio img">
-                    </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://timka1996.github.io/Clone-Pexels.com-API-/"
+                      >Clone pexels.com (API)</a
+                    >
+                  </h4>
+                  <p>Project description</p>
                 </div>
+                <img src="img/pexels.png" alt="Portfolio img" />
+              </div>
             </div>
-           <!-- <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="overlay">
-                            <h4>Project name</h4>
-                            <p>Project description</p>
-                        </div>
-                        <img src="./img/pizza.jpg" alt="Portfolio img">
-                    </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://timka-96pomodoro.netlify.app/"
+                      >Pomodoro APP</a
+                    >
+                  </h4>
+                  <p>Pomodoro APP (Mohirpool)</p>
                 </div>
-            </div> -->
+                <img src="./img/pomodoro.png" alt="Portfolio img" />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<section id="about" class="about">
-    <div class="container">
+        <h4 class="text-center my-4">My real Projects</h4>
+        <div id="img_container" class="row mt-4">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <div class="overlay">
+                  <h4>
+                    <a target="_blank" href="https://ccslife.uz/">CCSLife</a>
+                  </h4>
+                  <p>CCSLife (React)</p>
+                </div>
+                <img src="img/ccslife.png" alt="Portfolio img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
         <h3 class="text-center">About</h3>
         <p class="text-center"><i>My name is Valiev Temurbek</i></p>
         <div class="row">
-            <div class="col-md-4">
-                <img id="mine" class="w-100" src="./img/mine.jpg" alt="my picture">
+          <div class="col-md-4">
+            <img
+              id="mine"
+              class="w-100"
+              src="./img/mine.jpg"
+              alt="my picture"
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <h4>Temurbek Valiyev</h4>
+              <p>
+                I have experience in JavaScript development, and I can also make
+                layouts adaptively.
+              </p>
+              <ul class="main">
+                <li>
+                  <span class="firstSpan">
+                    <i class="fas fa-user"></i>
+                    Name:
+                  </span>
+                  <span class="secondSpan"> Temurbek Valiyev </span>
+                </li>
+                <li>
+                  <span class="firstSpan">
+                    <i class="fas fa-calendar-alt"></i>
+                    Birthday:
+                  </span>
+                  <span class="secondSpan"> 9 June 1996 </span>
+                </li>
+                <li>
+                  <span class="firstSpan">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Address:
+                  </span>
+                  <span class="secondSpan"> Kokand, Uzbekistan. </span>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-4">
-                <div class="info">
-                    <h4>Temurbek Valiyev</h4>
-                    <p>I have experience in JavaScript development, and I can also make layouts adaptively.
-                    </p>
-                    <ul class="main">
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-user"></i>
-                                Name:
-                            </span>
-                            <span class="secondSpan">
-                                Temurbek Valiyev
-                            </span>
-                        </li>
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-calendar-alt"></i>
-                                Birthday:
-                            </span>
-                            <span class="secondSpan">
-                                9 June 1996
-                            </span>
-                        </li>
-                        <li>
-                            <span class="firstSpan">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Address:
-                            </span>
-                            <span class="secondSpan">
-                                Kokand, Uzbekistan.
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="copyright">
-                    <p>
-                        Website made by Temurbek Valiyev <script>document.write(new Date().getFullYear());</script>
-                    </p>
-                </div>
+          <div class="col-md-4">
+            <div class="copyright">
+              <p>
+                Website made by Temurbek Valiyev
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
             </div>
-            <div class="col-md-4">
-                <div class="social-networks">
-                    <a href="#" class="networks">
-                        <i class="fab fa-telegram"></i> 
-                    </a>
-                    <a href="#" class="networks">
-                        <i class="fab fa-instagram"></i> 
-                    </a>
-                    <a href="https://github.com/timka1996" class="networks">
-                        <i class="fab fa-github"></i> 
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="social-networks">
+              <a href="https://t.me/Temurbek_9" class="networks">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="#" class="networks">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/timka1996" class="networks">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
-            <!-- <div class="col-md-4">
+          </div>
+          <!-- <div class="col-md-4">
                 <p class="smallInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quibusdam iure molestias
                      corrupti in earum maiores fuga fugiat rem 
                 </p>
             </div> -->
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="js/jQuery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-</body>
-
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
